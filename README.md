@@ -28,7 +28,7 @@ domain reptuations are malicious.
 ### Running in the terminal
 
 ```
-pangea-gpt.py chat
+./bin/pangea-gpt.py chat
 ```
 
 Note that `pangea-gpt.py` will store your previous conversations. You can start a
@@ -37,7 +37,7 @@ new conversation by passing the `--new-conversation` flag.
 ### Running in the browser
 
 ```
-pangea-gpt.py serve
+./bin/pangea-gpt.py serve
 ```
 
 It will automatically open your default browser to the proper page
