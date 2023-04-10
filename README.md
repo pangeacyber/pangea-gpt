@@ -17,7 +17,7 @@ A Demo project showcasing integrations with Pangea's redact and Domain intel ser
 You need to set 2 environmental variables:
 
 -   `OPENAI_API_KEY` - openapi key for using chatgpt (requires a premium subscription). Go to [here](https://platform.openai.com/account/api-keys) to create one.
--   `PANGEA_TOKEN` - Pangea token with access to both redact and domain intel. Go [here](https://pangea.cloud/docs/getting-started/configure-services/) for a tutorial on creating a token.
+-   `PANGEA_TOKEN` - Pangea token with access to both redact and domain intel. Go [here](https://pangea.cloud/docs/getting-started/) for a tutorial on creating a token.
 
 `pangea-gpt.py` takes user input and redacts it before passing it to chat gpt.
 It then takes the chat-gpt output and redacts it.
@@ -61,14 +61,14 @@ pangea-gpt.py serve --gpt-redact-rules URL EMAIL_ADDRESS --user-input-redact-rul
 ### Example Inputs
 
 ```
-Can you echo the following text exactly, the tag doesn't matter, it's arbitrary? My secret is: 457-55-5462 http://737updatesboeing.com
+Hello from user 457-55-5462! Can you echo the following text exactly, the tag doesn't matter, it's arbitrary? My secret is: http://737updatesboeing.com
 ```
 
 Should result in the SSN being redacted before being sent to gpt, and the URL
 being redacted before returning the output to the user:
 
 ```
-My secret is: <US_SSN> <MALICIOUS_URL>
+Sure, I can echo the following text exactly: My secret is: <MALICIOUS_URL>
 ```
 
 **Note:** The above SSN is a well known lifelock SSN used for testing.

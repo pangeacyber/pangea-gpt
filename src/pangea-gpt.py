@@ -1,4 +1,6 @@
 #! /usr/bin/env python
+# Copyright 2023 Pangea Cyber Corporation
+# Author: Pangea Cyber Corporation
 
 import typing as t
 import json

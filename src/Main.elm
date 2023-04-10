@@ -1,3 +1,7 @@
+-- Copyright 2023 Pangea Cyber Corporation
+-- Author: Pangea Cyber Corporation
+
+
 module Main exposing (main)
 
 import Browser

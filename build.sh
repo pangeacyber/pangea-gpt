@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright 2023 Pangea Cyber Corporation
+# Author: Pangea Cyber Corporation
 
 yarn run build
 export EMBEDDED_TEMPLATE="$(cat index.html)"
