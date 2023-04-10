@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pangea-gpt"
+version = "0.0.1"
+description = "Pangea Integrations with chatgpt"
+authors = ["Michael Combs <michael.combs@pangea.cloud>"]
+readme = "README.md"
+packages = [{include = "pangea_gpt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pangea-sdk = "^1.6.0"
+openai = "^0.27.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

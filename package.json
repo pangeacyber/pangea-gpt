@@ -1,0 +1,12 @@
+{
+  "name": "pangea-gpt",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Michael Combs <michael.combs@pangea.cloud>",
+  "devDependencies": {
+    "elm": "^0.19.1-5"
+  },
+  "scripts": {
+    "build": "elm make src/Main.elm --optimize"
+  }
+}
